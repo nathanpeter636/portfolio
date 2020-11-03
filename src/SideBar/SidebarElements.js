@@ -12,14 +12,14 @@ import {Link as LinkRouter} from 'react-router-dom';
 
 
 
-export const SidebarContainer = styled.aside`
+export const SidebarContainer = styled.div`
 
 position: fixed;
-z-index: 999;
+z-index: 2;
 width: 100%;
 height: 100%;
 background: #0d0d0d;
-
+opacity: 0;
 display: grid;
 align-items: center;
 top: 0;

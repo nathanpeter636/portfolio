@@ -9,7 +9,7 @@ export const Nav = styled.nav`
 
 background: black;
 height: 80px;
-/* margin-top: -80px; */
+margin-top: -80px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -43,11 +43,11 @@ color: white;
 
 justify-self: flex-start;
 cursor: pointer;
-font-size: 1.5rem;
+font-size: 1rem;
 display: flex;
 align-items: center;
 margin-left: 24px;
-font-weight: bold;
+
 text-decoration: none;
 
 
@@ -83,7 +83,7 @@ display: flex;
 align-items: center;
 text-align: center;
 list-style: none;
-margin-right: -22px;
+/* margin-right: -22px; */
 
 
 @media screen and (max-width: 768px) {
@@ -105,6 +105,10 @@ color: white;
 display: flex;
 align-items: center;
 text-decoration: none;
+
+width: 30%;
+margin-right: 100px;
+justify-content: center;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
