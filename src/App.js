@@ -1,23 +1,17 @@
+import { GlobalStyle } from "./Styles/GlobalStyle";
 
-import NavBar from "./Navbar"
+import { BrowserRouter as Router } from "react-router-dom";
 
-import {GlobalStyle} from "./Styles/GlobalStyle";
-
-import { BrowserRouter as Router} from 'react-router-dom';
-import SideBar from "./SideBar";
-
+import Home from "./pages";
 function App() {
   return (
-
     <>
-    <GlobalStyle/>
+      <GlobalStyle />
 
-    <Router>
-
-      <SideBar/>
-    <NavBar/>
-    </Router>
+      <Router>
+        <Home />
+      </Router>
     </>
-  )
+  );
 }
 export default App;
