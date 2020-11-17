@@ -11,34 +11,43 @@ import {
   NavItem,
   NavLinks,
   NavBtn,
-  NavBtnLink
+  NavBtnLink,
 } from "./NavbarElements";
 
-const Navbar = ({toggle}) => {
-
-
-
-
-
-
+const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">NATHAN PETERS</NavLogo>
+        <NavLogo to="home">NATHAN PETERS</NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
 
         <NavMenu>
           <NavItem>
-            <NavLinks to="About">About</NavLinks>
+            <NavLinks
+              to="about"
+              smooth={true}
+              duration={true}
+              spy={true}
+              exact={true}
+              offset={-80}
+            >
+              About
+            </NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="Work">Work</NavLinks>
+            <NavLinks
+              to="projects"
+              smooth={true}
+              duration={true}
+              spy={true}
+              exact={true}
+              offset={-30}
+            >
+              Work
+            </NavLinks>
           </NavItem>
-          
-          
-        
         </NavMenu>
 
         <NavBtn>

@@ -11,7 +11,7 @@ background: ${({primary}) => (primary ? '#01bf71' : '#010606')};
 white-space: nowrap;
 
 padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-color: ${({dark}) => (dark ? '010606' : 'white')};
+color: ${({dark}) => (dark ? 'black' : 'white')};
 
 font-Size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
 
