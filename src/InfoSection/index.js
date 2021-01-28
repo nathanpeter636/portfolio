@@ -2,6 +2,8 @@ import React from "react";
 
 import { Button } from "../Button/ButtonElements";
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import {
   InfoContainer,
   InfoWrapper,
@@ -34,15 +36,24 @@ const InfoSection = ({
   dark2
 }) => {
   return (
+    
     <InfoContainer lightBg={lightBg} id={id}>
       <InfoWrapper>
+        
+
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
+
+            <ScrollAnimation animateIn="fadeInDown" delay="200" animateOnce>
               <TopLine> {topLine} </TopLine>
+              </ScrollAnimation>
 
+              <ScrollAnimation animateIn="bounceIn" delay="1000" animateOnce>
               <Heading lightText={lightText}> {headline}</Heading>
+              </ScrollAnimation>
 
+              <ScrollAnimation animateIn="fadeIn" delay="2000" animateOnce>
               <Subtitle darkText={darkText}>
                 My motto as a developer is if you are the smartest person in the
                 room, you are in the wrong room.<br></br>
@@ -55,6 +66,7 @@ const InfoSection = ({
                 work to see what I can offer you. <br></br>
                 <br></br>
               </Subtitle>
+              </ScrollAnimation>
 
               <BtnWrap>
                 <Button
@@ -75,8 +87,11 @@ const InfoSection = ({
             </TextWrapper>
           </Column1>
           <Column2>
+
             <ImgWrap>
+            <ScrollAnimation animateIn="fadeInRight" delay="500" animateOnce>
               <Img src={img} alt={alt} />
+              </ScrollAnimation>
             </ImgWrap>
           </Column2>
         </InfoRow>

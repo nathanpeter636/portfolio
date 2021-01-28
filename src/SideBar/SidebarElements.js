@@ -64,6 +64,7 @@ color: white;
 
 export const SidebarMenu = styled.ul`
 
+
 display: grid;
 grid-template-columns: 1fr;
 grid-template-rows: repeat(4, 90px);
@@ -73,6 +74,11 @@ margin-right: 40px;
 @media screen and (max-width: 768px) {
     grid-template-rows: repeat(4, 90px)
 }
+
+@media screen and (min-width: 1080px) {
+   display: none;
+}
+
 
 
 `

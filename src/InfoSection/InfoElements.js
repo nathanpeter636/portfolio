@@ -127,6 +127,16 @@ ${fontSize2};
 line-height: 24px;
 color: ${({darkText}) => (darkText ? 'black' : 'white')};
 
+&:hover {
+    transform: scale(1.04);
+
+    transition: all 0.2s ease-in-out;
+
+   
+    
+
+    /* z-index: 1; */
+  }
 
 `;
 

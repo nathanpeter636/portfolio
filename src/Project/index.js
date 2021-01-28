@@ -1,13 +1,5 @@
-import {useState} from "react";
+import { useState } from "react";
 
-import styled from "styled-components";
-
-import Icon1 from "../images/Aucklandbanner.png"
-import Icon2 from "../images/CryptoTashNZbanner.png"
-import Icon3 from "../images/first.svg"
-import Icon4 from "../images/first.svg"
-import Icon5 from "../images/first.svg"
-import Icon6 from "../images/first.svg"
 import {
   ProjectsContainer,
   ProjectsH1,
@@ -16,92 +8,95 @@ import {
   ProjectsIcon,
   ProjectsH2,
   ProjectsP,
-  ProjectInfo
-} from "./ProjectElements"
+  ProjectInfo,
+} from "./ProjectElements";
+
+import {
+  projectObjOne,
+  projectObjTwo,
+  projectObjThree,
+  projectObjFour,
+  projectObjFive,
+  finalObj,
+} from "./ProjectData";
+
+import ProjectCard from "./ProjectCard";
 import { ProjectModal } from "./ProjectModal";
 
+const Projects = ({}) => {
+  const [showModal, setShowModal] = useState({ first: false, second: false, third: false, fourth: false, five: false,});
 
+ 
 
+  const openModal = (e) => {
+    setShowModal({ ...showModal, [e]: !showModal[e] });
+ };
 
-const Projects = ({toggleDialog}) => {
-
-
-const [showModal, setShowModal] = useState(false)
-
-const openModal = () => {
-
-
-  setShowModal(!showModal)
-
-  console.log('clicked')
-  
-}
-
+ 
 
   return (
-    <ProjectsContainer id='projects'>
-      <ProjectsH1></ProjectsH1>
+    <>
+      <ProjectsContainer id="projects">
 
-      <ProjectsWrapper>
-        <ProjectsCard onClick={openModal} >
-
-          <ProjectModal showModal={showModal} setShowModal={setShowModal} />
-
-          <ProjectsIcon src={Icon1} />
-          <ProjectInfo>
-          <ProjectsH2> Auckland Tourism App </ProjectsH2>
-          <ProjectsP> Check it out , shits crazy, corona virus</ProjectsP>
-          </ProjectInfo>
-
+        <ProjectsH1>Work</ProjectsH1>
+        <ProjectsWrapper>
           
-          
-        </ProjectsCard>
+        <div onClick={() => openModal('first')}>
+        <ProjectCard {...projectObjOne} />
+        <ProjectModal
+          showModal={showModal['first']}
+          setShowModal={setShowModal}
+          {...projectObjOne}
+        />
+        </div>
 
-        <ProjectsCard>
-          <ProjectsIcon src={Icon2} />
-          <ProjectInfo>
-          <ProjectsH2> CryptoTash NZ </ProjectsH2>
-          <ProjectsP> Check it out , shits crazy, corona virus</ProjectsP>
-          </ProjectInfo>
-          <ProjectsIcon src={Icon2} />
-        </ProjectsCard>
+        <div onClick={() => openModal('second')}>
+        <ProjectCard {...projectObjTwo} />
+        <ProjectModal
+          showModal={showModal['second']}
+          setShowModal={setShowModal}
+          {...projectObjTwo}
+        />
+        </div>
 
-        <ProjectsCard>
-          <ProjectsIcon src={Icon3} />
-          <ProjectInfo>
-          <ProjectsH2> Trove MarketPlace</ProjectsH2>
-          <ProjectsP> Check it out , shits crazy, corona virus</ProjectsP>
-          </ProjectInfo>
-        </ProjectsCard>
+        <div onClick={() => openModal('third')}>
+        <ProjectCard {...projectObjThree} />
+        <ProjectModal
+          showModal={showModal['third']}
+          setShowModal={setShowModal}
+          {...projectObjThree}
+        />
+        </div>
 
-        <ProjectsCard>
-          <ProjectsIcon src={Icon4} />
-          <ProjectInfo>
-          <ProjectsH2> Instagram Clone </ProjectsH2>
-          <ProjectsP> Check it out , shits crazy, corona virus</ProjectsP>
-          </ProjectInfo>
-        </ProjectsCard>
+        <div onClick={() => openModal('fourth')}>
+        <ProjectCard {...projectObjFour} />
+        <ProjectModal
+          showModal={showModal['fourth']}
+          setShowModal={setShowModal}
+          {...projectObjFour}
+        />
+        </div>
 
-        <ProjectsCard>
-          <ProjectsIcon src={Icon5} />
-          <ProjectInfo>
-          <ProjectsH2> Food Ordering App </ProjectsH2>
-          <ProjectsP> Check it out , shits crazy, corona virus</ProjectsP>
-          </ProjectInfo>
-        </ProjectsCard>
-
-        <ProjectsCard>
-          <ProjectsIcon src={Icon6} />
-          <ProjectInfo>
-          <ProjectsH2> MERN Stack App </ProjectsH2>
-          <ProjectsP> Check it out , shits crazy, corona virus</ProjectsP>
-          </ProjectInfo>
-        </ProjectsCard>
+        <div onClick={() => openModal('five')}>
+        <ProjectCard {...projectObjFive} />
+        <ProjectModal
+          showModal={showModal['five']}
+          setShowModal={setShowModal}
+          {...projectObjFive}
+        />
+        </div>
 
         
-      </ProjectsWrapper>
-    </ProjectsContainer>
+
+          
+        </ProjectsWrapper>
+      </ProjectsContainer>
+    </>
   );
 };
 
 export default Projects;
+
+{
+  /* <ProjectModal showModal={showModal} setShowModal={setShowModal} {...projectObjOne}  /> */
+}
