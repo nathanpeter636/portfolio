@@ -1,32 +1,31 @@
-import React from 'react'
+import React from "react";
 
+import ScrollAnimation from "react-animate-on-scroll";
 
-import {FooterContainer, FooterLinksContainer, FooterWrap, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, WebsiteRights } from "./FooterElements"
+import {
+  FooterContainer,
+  FooterLinksContainer,
+  FooterWrap,
+  FooterLinksWrapper,
+  FooterLinkItems,
+  FooterLinkTitle,
+  FooterLink,
+  WebsiteRights,
+} from "./FooterElements";
 
 const Footer = () => {
-    return (
-        <>
-
-    <FooterContainer>
+  return (
+    <>
+      <FooterContainer>
         <FooterWrap>
-           <FooterLinksContainer>
-               <FooterLinksWrapper>
-                   <FooterLinkItems>
-                       <FooterLinkTitle> Links </FooterLinkTitle>
-                          <FooterLink to="/contact"> Contact </FooterLink>
-                          <FooterLink to="/contact"> Contact </FooterLink>
-                          <FooterLink to="/contact"> Contact </FooterLink>
-                          <FooterLink to="/contact"> Contact </FooterLink>
-                      
-                   </FooterLinkItems>
-               </FooterLinksWrapper>
-           </FooterLinksContainer>
-           <WebsiteRights>Created by Nathan Peters © {new Date().getFullYear()} </WebsiteRights>
+          
+          <WebsiteRights>
+            Created by Nathan Peters © {new Date().getFullYear()}{" "}
+          </WebsiteRights>
         </FooterWrap>
-    </FooterContainer>
+      </FooterContainer>
+    </>
+  );
+};
 
-        </>
-    )
-}
-
-export default Footer
+export default Footer;

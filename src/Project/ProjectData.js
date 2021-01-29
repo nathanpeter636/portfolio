@@ -9,7 +9,7 @@ export const projectObjOne = {
   alt: "project-one",
 
   buttonLabel: "https://zuckbook-53c13.firebaseapp.com",
-  buttonLabelTwo: "Button 2",
+  buttonLabelTwo: "https://github.com/nathanpeter636/zuckbook_build",
 };
 
 export const projectObjTwo = {
@@ -23,7 +23,7 @@ export const projectObjTwo = {
   alt: "project-two",
 
   buttonLabel: "https://romantic-varahamihira-1743c8.netlify.app/",
-  buttonLabelTwo: "Button 2",
+  buttonLabelTwo: "https://github.com/nathanpeter636/shoes_landingpage",
 };
 
 export const projectObjThree = {
@@ -37,7 +37,7 @@ export const projectObjThree = {
   alt: "project-three",
 
   buttonLabel: "https://pizzaparty-50d3a.web.app",
-  buttonLabelTwo: "Button 2",
+  buttonLabelTwo: "https://github.com/nathanpeter636/pizzaparty",
 };
 
 export const projectObjFour = {
@@ -51,7 +51,7 @@ export const projectObjFour = {
   alt: "project-four",
 
   buttonLabel: "https://stockapp-13d36.web.app/",
-  buttonLabelTwo: "Button 2",
+  buttonLabelTwo: "https://github.com/nathanpeter636/stocks-app",
 };
 
 export const projectObjFive = {
@@ -59,12 +59,12 @@ export const projectObjFive = {
 
   topLine: "Video Chat App",
   headline: "Html, CSS, JS, Node.js ",
-  description: "Video Chap App made using WebRTC, Socket.io and Peer.js <br> The ",
+  description: "Video Chap App made using WebRTC, Socket.io and Peer.js ",
 
-  img: "https://images.axios.com/Lwxm5vSgo9JLHx9An1bI_RrHtRw=/fit-in/1920x1920/2018/01/25/1516876438403.png",
+  img: "https://cdn.dribbble.com/users/2202649/screenshots/14088308/video_call_interface_4x.png",
   alt: "project-four",
 
-  buttonLabel: "https://stockapp-13d36.web.app/",
+  buttonLabel: "https://shrouded-hollows-79754.herokuapp.com/",
   buttonLabelTwo: "Button 2",
 };
 

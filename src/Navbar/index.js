@@ -18,7 +18,17 @@ const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo>NATHAN PETERS</NavLogo>
+        <NavLogo
+            to="home"
+            smooth={true}
+            duration={true}
+            spy={true}
+            exact={true}
+            offset={-80}
+        
+        
+        
+        >NATHAN PETERS</NavLogo>
         <MobileIcon onClick={toggle}>
           <FaBars />
         </MobileIcon>
@@ -50,9 +60,9 @@ const Navbar = ({ toggle }) => {
           </NavItem>
         </NavMenu>
 
-        <NavBtn>
+        {/* <NavBtn>
           <NavBtnLink to="/contact">Contact</NavBtnLink>
-        </NavBtn>
+        </NavBtn> */}
       </NavbarContainer>
     </Nav>
   );

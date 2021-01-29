@@ -37,7 +37,7 @@ max-width: 1100px;
 `;
 
 
-export const NavLogo = styled(LinkRouter)`
+export const NavLogo = styled(LinkScroll)`
 
 color: white;
 
@@ -50,6 +50,10 @@ margin-left: 24px;
 
 text-decoration: none;
 
+
+&:hover {
+    color: #01bf71;
+}
 
 `;
 
@@ -115,7 +119,12 @@ cursor: pointer;
 
 &.active {
     border-bottom: 3px solid #01bf71;
+    
 
+}
+
+&:hover {
+    color: #01bf71;
 }
 
 `
