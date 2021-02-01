@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 export const ProjectsContainer = styled.div`
-  height: 1000px;
+  height: 1200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -12,13 +12,15 @@ export const ProjectsContainer = styled.div`
   background: white;
 
   @media screen and (max-width: 768px) {
-    height: 2100px;
+    height: 2400px;
   }
 
   @media screen and (max-width: 480px) {
     height: 1800px;
   }
 `;
+
+
 
 export const ProjectsWrapper = styled.div`
   
@@ -53,7 +55,7 @@ export const ProjectsCard = styled.div`
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  max-height: 340px;
+  height: 320px;
   padding: 0;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in-out;
@@ -121,6 +123,63 @@ export const ProjectsP = styled.p`
   font-size: 1rem;
   text-align: center;
 `;
+
+
+
+
+export const ProjectFlipped = styled(ProjectsCard)`
+
+
+display: flex;
+align-items: center;
+flex-direction: row;
+
+justify-content: space-evenly;
+background: #f5f5f5;
+
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+button {
+  padding: 10px 24px;
+    background: #141414;
+    border-radius: 50px;
+    background: #01bf71;
+    border: none;
+    margin: 10px;
+    font-size: 20px;
+    width: 100px;
+    cursor: pointer;
+    transition: 0.2s ease;
+
+    &:hover {
+  transform: translateY(-3px) scale(1.2);
+ 
+}
+}
+
+
+`
+
+export const FlipBack = styled.div`
+
+position: absolute;
+color: black;
+bottom: 0px;
+font-size: 50px;
+transition: 0.2s ease;
+
+&:hover {
+  transform: translateY(-3px) scale(1.2);
+ 
+}
+
+`
+
+
 
 
 

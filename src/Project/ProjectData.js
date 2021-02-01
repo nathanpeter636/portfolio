@@ -3,7 +3,7 @@ export const projectObjOne = {
 
   topLine: "ZuckBook",
   headline: "React.js, Context API, Firebase",
-  description: "Social Media style app with React HOOKS, Context API, Firebase Auth, Firebase Store and Login Auth",
+  description: "Social Media style app with React Hooks, Context API, Real time Database, Firebase Store and Login Auth",
 
   img: "/images/zuckbook.png",
   alt: "project-one",
@@ -65,6 +65,6 @@ export const projectObjFive = {
   alt: "project-four",
 
   buttonLabel: "https://shrouded-hollows-79754.herokuapp.com/",
-  buttonLabelTwo: "Button 2",
+  buttonLabelTwo: "https://github.com/nathanpeter636/video-chat-build",
 };
 

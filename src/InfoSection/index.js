@@ -57,8 +57,8 @@ const InfoSection = ({
               <Subtitle darkText={darkText}>
                 My motto as a developer is if you are the smartest person in the
                 room, you are in the wrong room.<br></br>
-                <br></br>I follow the most modern coding practices and
-                created this responsive portfolio specifically in React with a
+                <br></br>I follow the most up-to-date coding practices and
+                created this portfolio with a
                 range of modern technical features.{" "}
                 <br></br>
                 <br></br>

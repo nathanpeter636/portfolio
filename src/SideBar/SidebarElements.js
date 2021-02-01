@@ -15,6 +15,7 @@ import {Link as LinkRouter} from 'react-router-dom';
 export const SidebarContainer = styled.div`
 
 position: fixed;
+background-color: red;
 z-index: 2;
 width: 100%;
 height: 100%;
@@ -59,20 +60,24 @@ export const SidebarWrapper = styled.div`
 
 color: white;
 
+align-self: center;
 `;
 
 
 export const SidebarMenu = styled.ul`
 
-
+justify-content: center;
 display: grid;
 grid-template-columns: 1fr;
-grid-template-rows: repeat(4, 90px);
+grid-template-rows: repeat(3, 90px);
 text-align: center;
-margin-right: 40px;
+
 
 @media screen and (max-width: 768px) {
-    grid-template-rows: repeat(4, 90px)
+    grid-template-rows: repeat(4, 90px);
+  
+   align-content: center;
+  
 }
 
 @media screen and (min-width: 1080px) {
@@ -87,13 +92,17 @@ export const SidebarLink = styled(LinkScroll)`
 display: flex;
 align-items: center;
 justify-content: center;
-font-size: 2rem;
+font-size: 3rem;
 text-decoration: none;
 list-style: none;
 
 transition: 0.2s ease-in-out;
 text-decoration: none;
 color: white;
+
+margin: 20px;
+width: 20%;
+
 cursor: pointer;
 
 
