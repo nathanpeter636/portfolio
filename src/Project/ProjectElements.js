@@ -16,7 +16,7 @@ export const ProjectsContainer = styled.div`
   }
 
   @media screen and (max-width: 480px) {
-    height: 1800px;
+    height: 2000px;
   }
 `;
 
@@ -138,10 +138,6 @@ justify-content: space-evenly;
 background: #f5f5f5;
 
 
-a {
-    text-decoration: none;
-    color: black;
-  }
 
 button {
   padding: 10px 24px;

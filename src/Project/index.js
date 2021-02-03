@@ -23,9 +23,9 @@ import {
 } from "./ProjectData";
 
 import ProjectCard from "./ProjectCard";
-import ReactCardFlip from "react-card-flip";
 
-import { ProjectsCardFlipped } from "./ProjectsCardFlipped";
+
+
 
 import { ProjectModal } from "./ProjectModal";
 
@@ -38,96 +38,80 @@ const Projects = ({}) => {
     five: false,
   });
 
-  const [isFlipped, setIsFlipped] = useState(false);
+  // const [isFlipped, setIsFlipped] = useState(false);
 
   const openModal = (e) => {
-
     if (window.matchMedia("(min-width: 768px)").matches) {
-    setShowModal({ ...showModal, [e]: !showModal[e] });
-    }
-    
-  };
-
-  const handleClick = () => {
-    if (window.matchMedia("(max-width: 768px)").matches) {
-      setIsFlipped(true);
-
-    } else {
-      setIsFlipped(false)
+      setShowModal({ ...showModal, [e]: !showModal[e] });
     }
   };
 
-  return  (
+  // const handleClick = () => {
+  //   if (window.matchMedia("(max-width: 768px)").matches) {
+  //     setIsFlipped(true);
+  //     console.log(ckucj)
+
+  //   }
+  // };
+
+  return (
     <>
-
-
       <ProjectsContainer id="projects">
         <ProjectsH1>Work</ProjectsH1>
         <ProjectsWrapper>
           <div onClick={() => openModal("first")}>
-            <ProjectCard {...projectObjOne} />
             <ProjectModal
               showModal={showModal["first"]}
               setShowModal={setShowModal}
-              {...projectObjOne}
+              {...projectObjFive}
             />
+
+            <ProjectCard {...projectObjOne} />
           </div>
 
           <div onClick={() => openModal("second")}>
-            <ProjectCard {...projectObjTwo} />
-
-
             <ProjectModal
               showModal={showModal["second"]}
               setShowModal={setShowModal}
-              {...projectObjTwo}
+              {...projectObjFive}
             />
+
+            <ProjectCard {...projectObjTwo} />
           </div>
 
           <div onClick={() => openModal("third")}>
-            <ProjectCard {...projectObjThree} />
             <ProjectModal
               showModal={showModal["third"]}
               setShowModal={setShowModal}
-              {...projectObjThree}
+              {...projectObjFive}
             />
+
+            <ProjectCard {...projectObjThree} />
           </div>
 
-          <div onClick={() => openModal("fourth")}>
-            <ProjectCard {...projectObjFour} />
+          <div onClick={() => openModal("four")}>
             <ProjectModal
-              showModal={showModal["fourth"]}
+              showModal={showModal["four"]}
               setShowModal={setShowModal}
-              {...projectObjFour}
+              {...projectObjFive}
             />
+
+            <ProjectCard {...projectObjFour} />
+
+          
           </div>
 
           <div onClick={() => openModal("five")}>
-            
-          <ProjectModal
+            <ProjectModal
               showModal={showModal["five"]}
               setShowModal={setShowModal}
               {...projectObjFive}
             />
-           
-          <ReactCardFlip
-            isFlipped={isFlipped}
-            flipDirection="verticle"
-            flipSpeedBackToFront="1"
-          >
-            <div onClick={handleClick}>
-              <ProjectCard {...projectObjFive} />
-            </div>
-            <ProjectsCardFlipped {...projectObjFive} />
-           
-          </ReactCardFlip>
-          </div>
 
-        
-        
-
+            <ProjectCard {...projectObjFive} />
 
           
+          </div>
         </ProjectsWrapper>
       </ProjectsContainer>
     </>
