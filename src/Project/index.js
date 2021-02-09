@@ -24,9 +24,6 @@ import {
 
 import ProjectCard from "./ProjectCard";
 
-
-
-
 import { ProjectModal } from "./ProjectModal";
 
 const Projects = ({}) => {
@@ -63,7 +60,7 @@ const Projects = ({}) => {
             <ProjectModal
               showModal={showModal["first"]}
               setShowModal={setShowModal}
-              {...projectObjFive}
+              {...projectObjOne}
             />
 
             <ProjectCard {...projectObjOne} />
@@ -73,7 +70,7 @@ const Projects = ({}) => {
             <ProjectModal
               showModal={showModal["second"]}
               setShowModal={setShowModal}
-              {...projectObjFive}
+              {...projectObjTwo}
             />
 
             <ProjectCard {...projectObjTwo} />
@@ -83,7 +80,7 @@ const Projects = ({}) => {
             <ProjectModal
               showModal={showModal["third"]}
               setShowModal={setShowModal}
-              {...projectObjFive}
+              {...projectObjThree}
             />
 
             <ProjectCard {...projectObjThree} />
@@ -93,12 +90,10 @@ const Projects = ({}) => {
             <ProjectModal
               showModal={showModal["four"]}
               setShowModal={setShowModal}
-              {...projectObjFive}
+              {...projectObjFour}
             />
 
             <ProjectCard {...projectObjFour} />
-
-          
           </div>
 
           <div onClick={() => openModal("five")}>
@@ -109,8 +104,6 @@ const Projects = ({}) => {
             />
 
             <ProjectCard {...projectObjFive} />
-
-          
           </div>
         </ProjectsWrapper>
       </ProjectsContainer>
